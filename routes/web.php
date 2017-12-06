@@ -12,5 +12,7 @@
 */
 
 Route::get('/', function () {
+    $value = config('app.timezone');
+    dd($value);
     return view('welcome');
 });
