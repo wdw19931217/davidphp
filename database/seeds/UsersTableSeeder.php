@@ -47,6 +47,12 @@ class UsersTableSeeder extends Seeder
         $user->name = 'David';
         $user->email = 'i@davidphp.com';
         $user->avatar = 'https://fsdhubcdn.phphub.org/uploads/images/201710/14/1/ZqM7iaP4CR.png?imageView2/1/w/200/h/200';
+        // 初始化用户角色，将 1 号用户指派为【站长】
+        $user->assignRole('Founder');
         $user->save();
+
+        // 将 2 号用户指派为管理员
+        $user = User::find(2);
+        $user->assignRole('Maintainer');
     }
 }
