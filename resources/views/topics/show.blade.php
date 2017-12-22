@@ -74,3 +74,11 @@
     </div>
 </div>
 @stop
+
+@section('styles')
+    <link rel="stylesheet" type="text/css" href="{{ asset('css/prism.css') }}">
+@stop
+
+@section('scripts')
+    <script type="text/javascript"  src="{{ asset('js/prism.js') }}"></script>
+@stop
