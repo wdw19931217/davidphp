@@ -12,7 +12,7 @@
 
             <!-- Branding Image -->
             <a class="navbar-brand" href="{{ url('/') }}">
-                DavidPHP
+                PHPZHIDAO
             </a>
         </div>
 
