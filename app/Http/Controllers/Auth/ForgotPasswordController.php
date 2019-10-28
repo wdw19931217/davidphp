@@ -27,7 +27,7 @@ class ForgotPasswordController extends Controller
      */
     public function __construct()
     {
-        redirect('/');
+        die('Sorry, this website cannot be reset password!');
         $this->middleware('guest');
     }
 }
