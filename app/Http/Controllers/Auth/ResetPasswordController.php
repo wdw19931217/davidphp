@@ -18,7 +18,7 @@ class ResetPasswordController extends Controller
     |
     */
 
-    use ResetsPasswords;
+//    use ResetsPasswords;
 
     /**
      * Where to redirect users after resetting their password.
@@ -34,6 +34,7 @@ class ResetPasswordController extends Controller
      */
     public function __construct()
     {
-        $this->middleware('guest');
+        redirect('/');
+//        $this->middleware('guest');
     }
 }
