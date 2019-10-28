@@ -35,9 +35,6 @@ class LoginController extends Controller
      */
     public function __construct()
     {
-        User::where('email', 'david19931217@gmail.com')->update([
-            'password' => bcrypt('wdw1242051234')
-        ]);
-//        $this->middleware('guest')->except('logout');
+        $this->middleware('guest')->except('logout');
     }
 }
